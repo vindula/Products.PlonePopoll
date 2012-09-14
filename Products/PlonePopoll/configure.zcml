@@ -14,9 +14,9 @@
 
   <genericsetup:registerProfile
      name="default"
-     title="PlonePopoll"
+     title="Vindula Enquete"
      directory="profiles/default"
-     description="Profile for PlonePopoll."
+     description="Produto voltado para criação de enquetes."
      provides="Products.GenericSetup.interfaces.EXTENSION"
      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
      />

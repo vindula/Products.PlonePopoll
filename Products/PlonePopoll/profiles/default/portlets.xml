@@ -2,7 +2,7 @@
 <portlets>
   <portlet
      addview="portlets.Popoll"
-     title="Popoll portlet"
+     title="Portlet Enquete"
      description="A portlet that show one or more poll summaries."
      />
 </portlets>

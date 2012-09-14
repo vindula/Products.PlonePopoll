@@ -62,21 +62,21 @@ msgstr "Informe o número de escolhas para a enquete."
 
 #. Default: "Choose in the list below the configuration of PlonePopoll portlet."
 msgid "help_plonepopoll_portlet_configuration"
-msgstr "Escolha, na lista abaixo, a configuração da caixa da enquete."
+msgstr "Selecione na lista abaixo a enquete desejada."
 
 #. Default: Select number of published polls to display in PoPoll portlet. Minimal value is 1. If you enter 0, no portlet will be displayed.
 msgid "help_plonepopoll_portlet_configuration_number_of_polls"
-msgstr "Selecione o número de enquetes que serão apresentas na caixa de enquete. O valor mínimo é 1. Se você informar 0, a caixa de enquete não será mostrada."
+msgstr "Selecione o número de enquetes que serão apresentadas na caixa de enquete. O valor mínimo é 1. Se você informar 0, a caixa de enquete não será mostrada."
 
 msgid "help_poll_results_visibility"
-msgstr "Selecione se você quer que os resultados da enquete sejam visíveis."
+fmsgstr "Selecione se você deseja que os resultados da enquete sejam visíveis."
 
 #. Default: Select whether you want to show current results on vote page or portlet
 msgid "help_poll_show_current_results"
-msgstr "Selecione se você quer que o resultado seja apresentado na tela de votação."
+msgstr "Selecione se você deseja que o resultado seja apresentado na tela de votação."
 
 msgid "help_poll_status"
-msgstr "Selecione se você quer habilitar a enquete."
+msgstr "Selecione se você deseja habilitar a enquete."
 
 msgid "help_question"
 msgstr "Informe a pergunta da enquete."
