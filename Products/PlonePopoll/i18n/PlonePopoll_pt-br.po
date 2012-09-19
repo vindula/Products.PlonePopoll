@@ -69,7 +69,7 @@ msgid "help_plonepopoll_portlet_configuration_number_of_polls"
 msgstr "Selecione o número de enquetes que serão apresentadas na caixa de enquete. O valor mínimo é 1. Se você informar 0, a caixa de enquete não será mostrada."
 
 msgid "help_poll_results_visibility"
-fmsgstr "Selecione se você deseja que os resultados da enquete sejam visíveis."
+msgstr "Selecione se você deseja que os resultados da enquete sejam visíveis."
 
 #. Default: Select whether you want to show current results on vote page or portlet
 msgid "help_poll_show_current_results"
