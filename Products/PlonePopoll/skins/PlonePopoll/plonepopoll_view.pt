@@ -30,9 +30,19 @@
 
     <div tal:replace="structure provider:plone.belowcontenttitle" />
 
-    <p tal:condition="canVote"
-       i18n:translate="description_vote">
-      You can vote at most for <span i18n:name="number" tal:replace="number">#</span> choice(s) on the poll. If you vote again, your old vote is replaced by the new vote.
+    <p tal:condition="canVote">
+      <!--span i18n:translate="description_vote">
+            You can vote at most for <span i18n:name="number" tal:replace="number">#</span> choice(s) on the poll.
+      </span>   
+	   <tal:cond condition="python: number > 10">
+	       If you vote again, your old vote is replaced by the new vote.	
+	   </tal:cond-->
+	   <span>
+	       Você pode escolher <span tal:replace="number">#</span> alternativa(s) nesta enquete.
+		   <tal:cond condition="python: number > 1">
+		      Se você votar novamente, seu voto antigo será descartado.
+		   </tal:cond>  	 	
+	   </span>
     </p>
 
     <p i18n:translate="text_not_enable"
