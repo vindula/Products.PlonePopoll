@@ -67,7 +67,7 @@
       <div tal:replace="structure provider:plone.abovecontentbody" />
 
       <fieldset>
-        <ul>
+        <ul style="list-style-type: none;margin:10px; 0 0 0">
         <li tal:repeat="choice here/getResults">
           <input class="noborder"
                  name="choices"
