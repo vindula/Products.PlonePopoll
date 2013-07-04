@@ -34,15 +34,15 @@
       <!--span i18n:translate="description_vote">
             You can vote at most for <span i18n:name="number" tal:replace="number">#</span> choice(s) on the poll.
       </span>   
-	   <tal:cond condition="python: number > 10">
-	       If you vote again, your old vote is replaced by the new vote.	
-	   </tal:cond-->
-	   <span>
-	       Você pode escolher <span tal:replace="number">#</span> alternativa(s) nesta enquete.
-		   <tal:cond condition="python: number > 1">
-		      Se você votar novamente, seu voto antigo será descartado.
-		   </tal:cond>  	 	
-	   </span>
+       <tal:cond condition="python: number > 10">
+           If you vote again, your old vote is replaced by the new vote.    
+       </tal:cond-->
+       <span>
+           Você pode escolher <span tal:replace="number">#</span> alternativa(s) nesta enquete.
+           <tal:cond condition="python: number > 1">
+              Se você votar novamente, seu voto antigo será descartado.
+           </tal:cond>          
+       </span>
     </p>
 
     <p i18n:translate="text_not_enable"
@@ -83,12 +83,13 @@
             <tal:block 
                tal:define="choice_count      python: choice[1];
                            choice_percentage python: '%0.2f'%choice[2];
-                           bar_percentage    python: int(choice[2]) or 1;
-			   num repeat/choice/number;
+                           bar_percentage    python: int(choice[2]) or 0;
+               num repeat/choice/number;
                            num python:num % 10">
-              <img height="10" tal:attributes="width string:${bar_percentage}; src string:${portal_url}/bar_${num}.gif; alt string:${choice_percentage}%" />
+              <img style="height:10px; margin-bottom: 3px;" 
+                   height="10" tal:attributes="width string:${bar_percentage}; src string:${portal_url}/bar_${num}.gif; alt string:${choice_percentage}%" />
 
-              <span tal:content="structure string:${choice_count} (${choice_percentage}%)">150 (14%)</span>
+              <strong tal:content="structure string:${choice_count} (${choice_percentage}%)">150 (14%)</strong>
             </tal:block>
           </div>
         </li>
